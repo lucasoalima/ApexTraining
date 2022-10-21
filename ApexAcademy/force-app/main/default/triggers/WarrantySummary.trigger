@@ -1,3 +1,9 @@
+// Esse Trigger tem como intuito de criar um sumario para uma Case nova
+// Exemplos de formatção e 'transformação de um tipo para outro' no código
+// Tipos de variaveis no código: String, Integer, Decimal e Boolean
+// Referência: ApexAcademy aula 5 e 6
+
+// O object esta como Lead porem era para ser Case, e eu fiz errado
 trigger WarrantySummary on Lead (before insert) {
 
     String endingStatement = 'Have a nice day!';
@@ -17,7 +23,6 @@ trigger WarrantySummary on Lead (before insert) {
         + ' Extended warranty: ' + hasExtendedWarranty + '\n'
         + endingStatement;
 
-        
         
     }
 
